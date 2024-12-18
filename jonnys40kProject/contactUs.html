@@ -1,0 +1,90 @@
+<!DOCTYPE html/>
+<html>
+<head>
+    <title>Contact Us</title>
+
+    <!--Links in the syle sheet-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+</head>
+<body>
+
+    <!--Navigation-->
+    <nav>
+        <ul class="listSpec">
+            <li><a href="homePage.html">Home</a></li>
+            <li><a href="dAPage.html">Factions</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contactUs.html">Contact us</a></li>
+        </ul>
+    </nav>
+    <br />
+    <!--Contact us form-->
+    <div class="contactContainer">
+        <div class="contact">
+            <div class="contactBox">
+                <h2>Contact us:</h2>
+                <form acton="form-handler.php">
+                    <label for="fName">First Name:</label>
+                    <br />
+                    <input type="text" id="fName" name="fName" value="John" />
+                    <br /><br />
+                    <label for="sName">Surname:</label>
+                    <br />
+                    <input type="text" id="sName" name="sName" value="Smith" />
+                    <br><br />
+                    <h4>Whats your army?</h4>
+                    <label for="sMChk">Space Marines</label>
+                    <input type="checkbox" id="sMChk" name="sMChk" value="Space Marines" />
+                    <label for="orkChk">Orks</label>
+                    <input type="checkbox" id="orkChk" name="orkChk" value="Orks" />
+                    <label for="necChk">Necrons</label>
+                    <input type="checkbox" id="necChk" name="necChk" value="Necrons" />
+                    <label for="tyraChk">Tyrannids</label>
+                    <input type="checkbox" id="tyraChk" name="tyraChk" value="Tyranids" />
+                    <label for="otherChk">Other</label>
+                    <input type="checkbox" id="otherChk" name="otherChk" value="Other" />
+                    <label for="noneChk">None</label>
+                    <input type="checkbox" id="noneChk" name="noneChk" value="None" />
+                    <br /><br />
+                    <h4>Would you like us to send you update emails?</h4>
+                    <label for="updateRadio1">Yes</label>
+                    <input type="radio" id="updateRadio1" name="updateRadio" value="Yes" />
+                    <label for="updateRadio2">No</label>
+                    <input type="radio" id="updateRadio2" name="updateRadio" value="No" />
+                    <br /><br />
+                    <input id="submitButton" type="submit" value="submit" />
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!--Footer-->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Army Picker. All rights reserved</p>
+
+            <!--Footer Navigation-->
+            <ul class="footerNav">
+                <li><a href="homePage.html">Home</a></li>
+                <li><a href="dAPage.html">Factions</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contactUs.html">Contact us</a></li>
+            </ul>
+
+            <p class="footerSocial">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-discord"></i></a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
