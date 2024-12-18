@@ -1,7 +1,7 @@
 {
     "name": "project-portfolio-jonny",
     "version": "1.0.0",
-    "description": "My app",
+    "description": "portfolio projects",
     "main": "index.js",
     "scripts": {
         "start": "node index.js"
