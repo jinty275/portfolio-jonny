@@ -8,6 +8,6 @@ RUN npm install
 
 EXPOSE 3000
 
-ENV NAME project-portfolio-jonny
+ENV NAME=project-portfolio-jonny
 
 CMD ["npm", "start"]
