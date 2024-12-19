@@ -1,13 +1,8 @@
-FROM node:14-alpine
+# Use the official Nginx image as the base
+FROM nginx:alpine
 
-WORKDIR /app
+# Copy the contents of the 40k directory to the Nginx HTML directory
+COPY jonnys40kProject /usr/share/nginx/html
 
-COPY . /app/
-
-RUN npm install
-
-EXPOSE 3000
-
-ENV NAME=project-portfolio-jonny
-
-CMD ["npm", "start"]
+# Expose port 80 to make the server accessible
+EXPOSE 80
