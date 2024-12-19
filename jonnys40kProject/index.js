@@ -7,7 +7,7 @@ const port = 3000;
 const publicFolder = path.join(__dirname, 'jonnys40kProject');
 
 const server = http.createServer((req, res) => {
-    const filePath = path.join(publicFolder, req.url === '/' ? 'index.html' : req.url);
+    const filePath = path.join(publicFolder, req.url === '/' ? 'HomePage.html' : req.url);
     const extname = path.extname(filePath);
     const mimeTypes = {
         '.html': 'text/html',
