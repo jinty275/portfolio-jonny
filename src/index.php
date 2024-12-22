@@ -32,11 +32,10 @@
         <p>
         </div>
     </div>
-
-    <br><br>
     
     <!-- Skills Section -->
     <section id="skillsSection">
+    <br><br>
         <h2>Skills</h2>
 
         <!-- Program Languages -->
@@ -117,75 +116,52 @@
     </section>
     
     <br>
-    <br><br>
+    
     <!-- Projects Section -->
     <section id="projectsSection">
+    <br><br>
         <h2>Projects</h2>
-        <div class="projectContainer">
-         
-            <h3>Auto-generated reports</h3>
-            <p>
-                This project was created to help the clients of the company I worked for, Wearelanded, to generate reports automatically.
-                The reports are generated from the data stored in the database. What the clients choose to see in the report is what they got. 
-            </p>
-            <row class="projectSkills">
-                <div class="rSkill"><span>php</span></div>
-                <div class="rSkillB"><span>mySQL</span></div>
-                <div class="rSkill"><span>SQL</span></div>
-                <div class="rSkill"><span>js</span></div>
-                <div class="rSkillB"><span>jQuery</span></div>
-            </row>
-        </div>
-        <br>
+        <?php
+        $projects = [
+            [
+                'title' => 'Auto-generated reports',
+                'description' => 'This project was created to help the clients of the company I worked for, Wearelanded, to generate reports automatically. The reports are generated from the data stored in the database. What the clients choose to see in the report is what they got.',
+                'skills' => ['php', 'mySQL', 'SQL', 'js', 'jQuery']
+            ],
+            [
+                'title' => 'Upgrades bootstrap styles and functionality',
+                'description' => 'This project was during my time at Wearelanded and it was to update the platform from bootstrap 4 to bootstrap 5. While this was going on functionality was also updated and improved.',
+                'skills' => ['php', 'css', 'js', 'jQuery']
+            ],
+            [
+                'title' => 'Functionality and style upgrades',
+                'description' => 'This project was during my time at Zymplify and it was to update the css and overall functionality of the platform. This involved updating modals, buttons, and the overall look of the platform, as well as moving inline styles and internal styles to external stylesheets.',
+                'skills' => ['php', 'css', 'js', 'jQuery']
+            ],
+            [
+                'title' => 'Round-robin integration',
+                'description' => 'This project was also during my time at Zymplify and was created to assign multiple candidates to multiple employees. In order to process the workload more efficiently.',
+                'skills' => ['php', 'mySQL', 'SQL', 'js', 'jQuery']
+            ]
+        ];
 
-        <div class="projectContainer">
-        <br>
-            <h3>Upgrades bootstap styles and functionality</h3>
-            <p>
-                This project was during my time at Wearelanded and it was to update the platform from bootstrap 4 to bootstrap 5. 
-                While this was going on functionality was also updated and improved.
-            </p>
-            <row class="projectSkills">
-                <div class="rSkill"><span>php</span></div>
-                <div class="rSkill"><span>css</span></div>
-                <div class="rSkill"><span>js</span></div>
-                <div class="rSkillB"><span>jQuery</span></div>
-            </row>
-        </div>
-        <br>
-
-        <div class="projectContainer">
-        <br>
-            <h3>Functionality and style upgrades</h3>
-            <p>
-                This project was during my time at Zymplify and it was to update the css and overall functionality of the platform. 
-                This involved updating modals, buttons, and the overall look of the platform,
-                as well as moving inline styles and internal styles to external stylesheets and reducing the amout of external stylesheets
-            </p>
-            <row class="projectSkills">
-                <div class="rSkill"><span>php</span></div>
-                <div class="rSkill"><span>css</span></div>
-                <div class="rSkill"><span>js</span></div>
-                <div class="rSkillB"><span>jQuery</span></div>
-            </row>
-        </div>
-
-        <br>
-        
-        <div class="projectContainer">
-            <h3>Round-robin integration</h3>
-            <p>
-                This project was also during my time at Zymplify and was created to assign multiple candidates to multiple employees. In order to process the workload more efficiently.
-                This was applied to both form submissions and could also be manually set by the clients themselves in other areas of the system.
-            </p>
-            <row class="projectSkills">
-                <div class="rSkill"><span>php</span></div>
-                <div class="rSkillB"><span>mySQL</span></div>
-                <div class="rSkill"><span>SQL</span></div>
-                <div class="rSkill"><span>js</span></div>
-                <div class="rSkillB"><span>jQuery</span></div>
-            </row>
-        </div>
+        foreach ($projects as $project) {
+            echo "<div class='projectContainer'>";
+            echo "<h3>{$project['title']}</h3>";
+            echo "<p>{$project['description']}</p>";
+            echo "<row class='projectSkills'>";
+            foreach ($project['skills'] as $skill) {
+                if (strpos($skill, 'mySQL') !== false || strpos($skill, 'jQuery') !== false) {
+                    $class = 'rSkillB';
+                } else {
+                    $class = 'rSkill';
+                }
+                echo "<div class='{$class}'><span>{$skill}</span></div>";
+            }
+            echo "</row>";
+            echo "</div><br>";
+        }
+        ?>
      </section>
      <br><br><br>
 
