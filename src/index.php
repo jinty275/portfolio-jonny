@@ -146,6 +146,7 @@
         ];
 
         foreach ($projects as $project) {
+            error_log(print_r($project, true));
             echo "<div class='projectContainer'>";
             echo "<h3>{$project['title']}</h3>";
             echo "<p>{$project['description']}</p>";
