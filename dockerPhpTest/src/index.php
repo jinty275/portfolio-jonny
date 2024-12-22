@@ -205,7 +205,7 @@
                 If you wish to contact me you can do so by email at: <a href="mailto:jrsc-94@hotmail.co.uk" class="email-link">jrsc-94@hotmail.co.uk</a>
             </p>
 
-            <a class="cvL" href="assets/cv.pdf" download="My_CV.pdf"><strong>Download My CV</strong></a>
+            <a class="cvL" href="assets/JonathanCarlisleCV.pdf" download="JonathanCarlisleCV.pdf"><strong>Download My CV</strong></a>
         </div>
     </section>
     <br><br>
