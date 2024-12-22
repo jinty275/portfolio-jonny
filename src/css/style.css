@@ -116,6 +116,22 @@ section {
     vertical-align: middle;
 }
 
+.skillIco {
+    margin: 0 20px !important;
+}
+
+.skillIcoCS {
+    padding-left: 0 !important;
+}
+
+.icoM {
+    margin-left: 0px !important;
+}
+
+.icoP {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
 
 .sqlIco {
     color:#9c1f1f;
@@ -141,6 +157,10 @@ section {
 
 .icon-figure i {
     font-size: 40px;
+}
+
+.icon-figure:hover i {
+    color: orange; 
 }
 
 .icon-figure figcaption {
@@ -172,7 +192,7 @@ figcaption {
 }
 
 .rSkill {
-    background-color: #4b4949bb;
+    background-color: #d89a16;
     width: 4%;
     padding: 1%;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -181,7 +201,7 @@ figcaption {
 }
 
 .rSkillB {
-    background-color: #4b4949bb;
+    background-color: #d89a16;
     width: 6%;
     padding: 1% 2%;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);

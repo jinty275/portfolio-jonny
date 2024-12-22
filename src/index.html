@@ -8,18 +8,22 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 
+    <!-- Script -->
+    <script src="scripts/script.js"></script>
 </head>
 <body>
 
     <!-- Navigation -->
     <nav>
         <ul class="listSpec">
-            <li><a href="#" onclick="scrollToSection('skillsSection')">Skills</a></li>
-            <li><a href="#" onclick="scrollToSection('projectsSection')">Projects</a></li>
-            <li><a href="#" onclick="scrollToSection('aboutMeSection')">About Me</a></li>
+            <li><a href="#" onclick="scrollToSection(event, 'skillsSection')">Skills</a></li>
+            <li><a href="#" onclick="scrollToSection(event, 'projectsSection')">Projects</a></li>
+            <li><a href="#" onclick="scrollToSection(event, 'aboutMeSection')">About Me</a></li>
         </ul>
     </nav>
+
     <br>
+
     <!-- Introduction -->
     <div class="mainImgContainer">
         <div class="introHeader">
@@ -33,20 +37,21 @@
         </div>
     </div>
 
-    <br><br>
+    
     
     <!-- Skills Section -->
     <section id="skillsSection">
+        <br><br>
         <h2>Skills</h2>
 
         <!-- Program Languages -->
         <div class="iconContainer">
             <h3>Program Languages</h3>
-            <figure class="icon-figure">
+            <figure class="icon-figure skillIco">
                 <i class="fa-brands fa-html5"></i>
                 <figcaption>HTML 5</figcaption>
             </figure>
-            <figure class="icon-figure">
+            <figure class="icon-figure skillIco skillIcoCS">
                 <i class="fa-regular fa-file-code"></i>
             <figcaption>CSS</figcaption>
             </figure>        
@@ -90,36 +95,36 @@
                 <i class="fa-brands fa-aws"></i>
                 <figcaption>AWS</figcaption>
             </figure>
-            <figure class="icon-figure">
+            <figure class="icon-figure icoM">
                 <i class="fa-solid fa-code-commit"></i>
                 <figcaption>AWS S3</figcaption>
             </figure>
-            <figure class="icon-figure">
+            <figure class="icon-figure icoM">
                 <i class="fa-brands fa-docker"></i>
                 <figcaption>Docker</figcaption>
             </figure>
-            <figure class="icon-figure">
-                <i class="fa-solid fa-bug"></i>
-                <figcaption>Zendesk</figcaption>
+            <figure class="icon-figure icoP">
+                <i class="fa-solid fa-server"></i>
+                <figcaption>SQL Workbench</figcaption>
             </figure>
-            
             <br>
             
-            <figure class="icon-figure">
+            <figure class="icon-figure icoM">
             <i class="fa-solid fa-laptop-code"></i>
                 <figcaption>Visual Studio</figcaption>
             </figure>
-            <figure class="icon-figure">
-                <i class="fa-solid fa-server"></i>
-                <figcaption>SQL Workbench</figcaption>
+            <figure class="icon-figure icoM">
+                <i class="fa-solid fa-bug"></i>
+                <figcaption>Zendesk</figcaption>
             </figure>
         </div>
     </section>
     
     <br>
-    <br><br>
+    
     <!-- Projects Section -->
     <section id="projectsSection">
+        <br><br>
         <h2>Projects</h2>
         <div class="projectContainer">
          
@@ -194,16 +199,17 @@
         <h2>About Me</h2>
         <div class="aboutMeContainer">
             <p>
-                My other hobbies include gaming, model making, and sci-fi. I have always been a fan of sci-fi, used to be just movies and tv shows but now I have started reading sci-fi books as well.
-                This includes the horus heresy series, a series I would love to see on the big screen one day. In terms of gaming, I am a fan of the total war series, the elder scrolls series, and the fallout series.
-                Ever since I was a child I have always been interested in technology and how things work. 
-            </p>
-            <p>
                 From taking apart my toys to see how they functioned to eventually 3d printing an iron man helmet, which I later kitted out to light up and open and close at the push of a button.
                 I have always been interested in how things work and how they can be improved. 
                 I believe this carries over to web and software development too, where I hope to expand my knowledge and skills.
-                If you wish to contact me you can do so by email at: <a href="mailto:jrsc-94@hotmail.co.uk" class="email-link">jrsc-94@hotmail.co.uk</a>
             </p>
+            <p>
+                My other hobbies include gaming and model making. I have always been a fan of sci-fi, used to be just movies and tv shows but now I have started reading sci-fi books as well.
+                This includes the horus heresy series, a series I would love to see on the big screen one day. In terms of gaming, I am a fan of the total war series, the elder scrolls series, and the fallout series.
+                Ever since I was a child I have always been interested in technology and how things work. 
+            </p>
+
+            <p> If you wish to contact me you can do so by email at: <a href="mailto:jrsc-94@hotmail.co.uk" class="email-link">jrsc-94@hotmail.co.uk</a></p>
 
             <a class="cvL" href="assets/JonathanCarlisleCV.pdf" download="JonathanCarlisleCV.pdf"><strong>Download My CV</strong></a>
         </div>
@@ -216,15 +222,5 @@
             <p>&copy; 2024 Jonny Calisle's Portfolio. All rights reserved</p>
         </div>
     </footer>
-
-    <!-- Scripts -->
-    <script>
-        function scrollToSection(sectionId) {
-            const element = document.getElementById(sectionId);
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-    </script>
 </body>
 </html>
