@@ -1,9 +1,9 @@
-<!DOCTYPE html/>
+<!DOCTYPE html>
 <html>
 <head>
     <title>My Portfolio</title>
 
-    <!-- Links in the syle sheet -->
+    <!-- Style Sheets -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
@@ -12,7 +12,7 @@
     <script src="scripts/script.js"></script>
 </head>
 <body>
-
+    <header>
     <!-- Navigation -->
     <nav>
         <ul class="listSpec">
@@ -25,106 +25,137 @@
     <br>
 
     <!-- Introduction -->
-    <div class="mainImgContainer">
         <div class="introHeader">
-        <header>
-            <h1>Hi, I am Jonny || Junior Software Developer</h1>
-        </header>
-        <p>
-            I greatly enjoy the challenge of creating and developing software, as well as learning new skills.
-            I am also a gamer, model maker and a bit of a sci-fi nerd. 
-        <p>
+            <div class="subber">
+                <h1>Hi, I am Jonny || Junior Software Developer</h1>
+                <div class="intro">
+                    <p>
+                        I greatly enjoy the challenge of creating and developing software such as websites, as well as learning new skills.
+                        I am also a gamer, model maker and a bit of a sci-fi nerd. 
+                    <p>
+                </div>
+            </div>
         </div>
-    </div>
+    </header>
 
     
     
-    <!-- Skills Section -->
+    <main>
+        <!-- Skills Section -->
     <section id="skillsSection">
         <br><br>
-        <h2>Skills</h2>
+        <div class="subSection">
+            <h2>Skills</h2>
 
-        <!-- Program Languages -->
-        <div class="iconContainer">
-            <h3>Program Languages</h3>
-            <figure class="icon-figure skillIco">
-                <i class="fa-brands fa-html5"></i>
-                <figcaption>HTML 5</figcaption>
-            </figure>
-            <figure class="icon-figure skillIco skillIcoCS">
-                <i class="fa-regular fa-file-code"></i>
-            <figcaption>CSS</figcaption>
-            </figure>        
-            <figure class="icon-figure">
-                <i class="fa-brands fa-php"></i>
-                <figcaption>PHP</figcaption>
-            </figure>
-            <figure class="icon-figure">
-                <i class="fa-brands fa-js"></i>
-                <figcaption>JS</figcaption>
-            </figure>
-            <figure class="icon-figure">
-                <i class="fa-solid fa-scroll"></i>
-            <figcaption>jQUERY</figcaption>
-            </figure>
-            <figure class="icon-figure">
-                <i class="fa-solid mysqlIco fa-database"></i>
-                <figcaption>mySQL</figcaption>
-            </figure>
-            <figure class="icon-figure">
-                <i class="fa-solid sqlIco fa-database"></i>
-                <figcaption>SQL</figcaption>
-            </figure>
-        </div>
-        
-        <br>
+            <!-- Program Languages -->
+            <div class="skills">
+                <h3>Program Languages</h3>
+                <figure class="icon-figure skillIco">
+                    <i class="fa-brands fa-html5"></i>
+                    <figcaption>HTML 5</figcaption>
+                </figure>
+                <figure class="icon-figure">
+                    <i class="fa-regular fa-file-code"></i>
+                <figcaption>CSS</figcaption>
+                </figure>        
+                <figure class="icon-figure">
+                    <i class="fa-brands fa-php"></i>
+                    <figcaption>PHP</figcaption>
+                </figure>
+                <figure class="icon-figure">
+                    <i class="fa-brands fa-js"></i>
+                    <figcaption>JS</figcaption>
+                </figure>
+                
+                <figure class="icon-figure">
+                    <i class="fa-solid fa-database"></i>
+                    <figcaption>SQL</figcaption>
+                </figure>
+            </div>
 
-        <!-- Program Tools -->
-        <div class="iconContainer">
-            <h3>Tools</h3>
-            <figure class="icon-figure">
-                <i class="fa-brands fa-git-alt"></i>
-                <figcaption>Git</figcaption>
-            </figure>
-            <figure class="icon-figure">
-                <i class="fa-brands fa-github"></i>
-                <figcaption>Github</figcaption>
-            </figure>
+            <!-- Frameworks & Libraries -->
+            <div class="skills">
+                <h3>Frameworks & Libraries</h3>
+                <figure class="icon-figure">
+                    <i class="fa-solid fa-scroll"></i>
+                    <figcaption>jQUERY</figcaption>
+                </figure>
+                <figure class="icon-figure">
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <figcaption>Bootstap</figcaption>
+                </figure>
+                
+                <figure class="icon-figure">
+                    <img src="../src/images/tailwindcss-mark.svg" alt="tailwind icon">
+                    <figcaption>Tailwind</figcaption>
+                </figure>
+            </div>
+
+            <!-- Database Management -->
+            <div class="skills">
+                <h3>Database Management</h3>
+                <figure class="icon-figure">
+                    <i class="fa-solid fa-database"></i>
+                    <figcaption>mySQL</figcaption>
+                </figure>
+                <figure class="icon-figure icoP">
+                    <i class="fa-solid fa-server"></i>
+                    <figcaption>MySQL Workbench</figcaption>
+                </figure>
+            </div>
+
+            <!-- Development Tools -->
+            <div class="skills">
+                <h3>Development Tools</h3>
+                <figure class="icon-figure">
+                    <i class="fa-brands fa-docker"></i>
+                    <figcaption>Docker</figcaption>
+                </figure>
+                <figure class="icon-figure">
+                <i class="fa-solid fa-laptop-code"></i>
+                    <figcaption>VS Code</figcaption>
+                </figure>
+                <figure class="icon-figure">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <figcaption>Git</figcaption>
+                </figure>
+                <figure class="icon-figure">
+                    <i class="fa-brands fa-github"></i>
+                    <figcaption>Github</figcaption>
+                </figure>
+            </div>
+
+            <!-- CLoud Platforms -->
+            <div class="skills">
+                <h3>Cloud Platforms</h3>
+                <figure class="icon-figure">
+                    <i class="fa-brands fa-aws"></i>
+                    <figcaption>AWS</figcaption>
+                </figure>
+                <figure class="icon-figure">
+                    <i class="fa-solid fa-code-commit"></i>
+                    <figcaption>AWS S3</figcaption>
+                </figure>
+            </div>
             
-            <figure class="icon-figure">
-                <i class="fa-brands fa-aws"></i>
-                <figcaption>AWS</figcaption>
-            </figure>
-            <figure class="icon-figure icoM">
-                <i class="fa-solid fa-code-commit"></i>
-                <figcaption>AWS S3</figcaption>
-            </figure>
-            <figure class="icon-figure icoM">
-                <i class="fa-brands fa-docker"></i>
-                <figcaption>Docker</figcaption>
-            </figure>
-            <figure class="icon-figure icoP">
-                <i class="fa-solid fa-server"></i>
-                <figcaption>SQL Workbench</figcaption>
-            </figure>
-            <br>
-            
-            <figure class="icon-figure icoM">
-            <i class="fa-solid fa-laptop-code"></i>
-                <figcaption>Visual Studio</figcaption>
-            </figure>
-            <figure class="icon-figure icoM">
-                <i class="fa-solid fa-bug"></i>
-                <figcaption>Zendesk</figcaption>
-            </figure>
+            <!-- Other Tools -->
+            <div class="skills">
+                <h3>Other Tools</h3>
+                <figure class="icon-figure">
+                    <i class="fa-solid fa-bug"></i>
+                    <figcaption>Zendesk</figcaption>
+                </figure>
+                <figure class="icon-figure">
+                    <i class="fa-brands fa-slack"></i>
+                    <figcaption>Slack</figcaption>
+                </figure>
+            </div>
         </div>
     </section>
-    
-    <br>
-    
+    <hr>
     <!-- Projects Section -->
     <section id="projectsSection">
-        <br><br>
+        <div class="subSection">
         <h2>Projects</h2>
         <div class="projectContainer">
          
@@ -133,13 +164,13 @@
                 This project was created to help the clients of the company I worked for, Wearelanded, to generate reports automatically.
                 The reports are generated from the data stored in the database. What the clients choose to see in the report is what they got. 
             </p>
-            <row class="projectSkills">
+            <div class="projectSkills">
                 <div class="rSkill"><span>php</span></div>
-                <div class="rSkillB"><span>mySQL</span></div>
+                <div class="rSkill"><span>mySQL</span></div>
                 <div class="rSkill"><span>SQL</span></div>
                 <div class="rSkill"><span>js</span></div>
-                <div class="rSkillB"><span>jQuery</span></div>
-            </row>
+                <div class="rSkill"><span>jQuery</span></div>
+            </div>
         </div>
         <br>
 
@@ -150,12 +181,12 @@
                 This project was during my time at Wearelanded and it was to update the platform from bootstrap 4 to bootstrap 5. 
                 While this was going on functionality was also updated and improved.
             </p>
-            <row class="projectSkills">
+            <div class="projectSkills">
                 <div class="rSkill"><span>php</span></div>
                 <div class="rSkill"><span>css</span></div>
                 <div class="rSkill"><span>js</span></div>
-                <div class="rSkillB"><span>jQuery</span></div>
-            </row>
+                <div class="rSkill"><span>jQuery</span></div>
+            </div>
         </div>
         <br>
 
@@ -167,12 +198,12 @@
                 This involved updating modals, buttons, and the overall look of the platform,
                 as well as moving inline styles and internal styles to external stylesheets and reducing the amout of external stylesheets
             </p>
-            <row class="projectSkills">
+            <div class="projectSkills">
                 <div class="rSkill"><span>php</span></div>
                 <div class="rSkill"><span>css</span></div>
                 <div class="rSkill"><span>js</span></div>
-                <div class="rSkillB"><span>jQuery</span></div>
-            </row>
+                <div class="rSkill"><span>jQuery</span></div>
+            </div>
         </div>
 
         <br>
@@ -181,45 +212,50 @@
             <h3>Round-robin integration</h3>
             <p>
                 This project was also during my time at Zymplify and was created to assign multiple candidates to multiple employees. In order to process the workload more efficiently.
-                This was applied to both form submissions and could also be manually set by the clients themselves in other areas of the system.
+                This was applied to both form submissions and could also be manually set by the clients themselves in other areas of the platform.
             </p>
-            <row class="projectSkills">
+            <div class="projectSkills">
                 <div class="rSkill"><span>php</span></div>
-                <div class="rSkillB"><span>mySQL</span></div>
+                <div class="rSkill"><span>mySQL</span></div>
                 <div class="rSkill"><span>SQL</span></div>
                 <div class="rSkill"><span>js</span></div>
-                <div class="rSkillB"><span>jQuery</span></div>
-            </row>
+                <div class="rSkill"><span>jQuery</span></div>
+            </div>
+        </div>
         </div>
      </section>
-     <br><br><br>
 
-     <!-- Projects Section -->
+     <hr>
+     <!-- About Me Section -->
     <section id="aboutMeSection">
-        <h2>About Me</h2>
-        <div class="aboutMeContainer">
+        <div class="subSection">
+            <h2>About Me</h2>
+        <div>
             <p>
-                From taking apart my toys to see how they functioned to eventually 3d printing an iron man helmet, which I later kitted out to light up and open and close at the push of a button.
+                From taking things apart as a kid to see how they functioned to eventually creating a functional iron man helmet which lit up, opened and closed at the push of a button.
                 I have always been interested in how things work and how they can be improved. 
-                I believe this carries over to web and software development too, where I hope to expand my knowledge and skills.
+                Something I believe carries over to web and software development too, where I hope to continue to expand my knowledge and skills.
             </p>
             <p>
-                My other hobbies include gaming and model making. I have always been a fan of sci-fi, used to be just movies and tv shows but now I have started reading sci-fi books as well.
+                My other hobbies include gaming and model making. I have always been a fan of sci-fi, that used to be just movies and tv shows, but now I read sci-fi books as well.
                 This includes the horus heresy series, a series I would love to see on the big screen one day. In terms of gaming, I am a fan of the total war series, the elder scrolls series, and the fallout series.
                 Ever since I was a child I have always been interested in technology and how things work. 
             </p>
 
             <p> If you wish to contact me you can do so by email at: <a href="mailto:jrsc-94@hotmail.co.uk" class="email-link">jrsc-94@hotmail.co.uk</a></p>
 
-            <a class="cvL" href="assets/JonathanCarlisleCV.pdf" download="JonathanCarlisleCV.pdf"><strong>Download My CV</strong></a>
+            <br>
+            <a class="dCv" href="assets/JonathanCarlisleCV.pdf" download="JonathanCarlisleCV.pdf"><strong>Download My CV</strong></a>
+            <br>
+        </div>
         </div>
     </section>
-    <br><br>
+    </main>
 
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <p>&copy; 2024 Jonny Calisle's Portfolio. All rights reserved</p>
+            <p>&copy; 2025 Jonny Calisle's Portfolio. All rights reserved</p>
         </div>
     </footer>
 </body>

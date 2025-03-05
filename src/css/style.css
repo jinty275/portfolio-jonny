@@ -48,7 +48,7 @@ nav a:hover {
     text-decoration: 2px underline;
 }
 
-.mainImgContainer {
+.introHeader {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,7 +60,7 @@ nav a:hover {
     position: relative;
 }
 
-.introHeader {
+.subber {
     color: #fff;
     display: block;
     text-align: left;
@@ -73,9 +73,9 @@ h1 {
     margin-bottom: 30px;
 }
 
-.introHeader p {
+.intro {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width:70%;
+    width: 85%;
 }
 
 h2 {
@@ -89,15 +89,29 @@ h3 {
 }
 
 section {
-    display: block;
-    text-align: left;
-    margin-left: 30%;
-    width: 40%;
-    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 40px;
     position: relative;
 }
 
+.subSection {
+    width: 70%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
 /* Skills section styles */
+
+.skills {
+    margin-top: 40px;
+}
+
+.skills h3, .projectContainer h3{
+    color: #d44f11;
+}
+
 .fa-brands {
     padding: 2%;
     font-size: 24px;
@@ -120,33 +134,6 @@ section {
     margin: 0 20px !important;
 }
 
-.skillIcoCS {
-    padding-left: 0 !important;
-}
-
-.icoM {
-    margin-left: 0px !important;
-}
-
-.icoP {
-    padding-left: 0 !important;
-    margin-left: 0 !important;
-}
-
-.sqlIco {
-    color:#9c1f1f;
-    
-}
-
-.mysqlIco {
-    color:#1f479c;
-}
-
-.iconContainer {
-    padding-left: 1%;
-}
-
-
 .icon-figure {
     display: inline-block;
     text-align: center;
@@ -163,47 +150,33 @@ section {
     color: orange; 
 }
 
+.icon-figure img {
+    filter: grayscale(100%) brightness(0);
+    transition: filter 0.3s ease;
+}
+
+.icon-figure:hover img:hover {
+    filter: brightness(0) saturate(100%) invert(48%) sepia(100%) saturate(400%) hue-rotate(-10deg);
+}
+
 .icon-figure figcaption {
     margin-top: 5px;
     font-size: 14px;
     color: #666;
 }
 
-figcaption {
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 100%;
-    text-align:center;
-    color: aliceblue;
-    z-index: 1;
-    padding: 0;
-    font-size: 15px;
-    bottom: 6px;
-}
-
 /* Projects section styles */
-.projectContainer {
-    padding-left: 1%;
-}
 
 .projectSkills {
-    width: 100%;
     display: flex;
+    justify-content: center;
     gap: 5px;
 }
 
 .rSkill {
     background-color: #d89a16;
-    width: 4%;
+    width: 50px;
     padding: 1%;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    text-align: center;
-}
-
-.rSkillB {
-    background-color: #d89a16;
-    width: 6%;
-    padding: 1% 2%;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     text-align: center;
@@ -214,15 +187,7 @@ figcaption {
     color: #f7f7f7 ;
 }
 
-.projectContainer {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
 /* About me Section */
-.aboutMeContainer {
-    padding-left: 1%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 
 .email-link {
     color: #1368c9;
@@ -234,17 +199,16 @@ figcaption {
     text-decoration: underline;
 }
 
-.cvL {
+.dCv {
     display: flex;
     justify-content: center;
     text-align: center;
     color: #d41111;
     text-decoration: none;
     transition: color 0.3s;
-    margin: 10% auto;
 }
 
-.cvL:hover {
+.dCv:hover {
     color: #d44f11;
     text-decoration: underline;
     transition: color 0.3s;
@@ -258,14 +222,25 @@ footer {
     width: 100%
 }
 
-footer-content {
+.footer-content p {
     text-align: center;
     margin: 0;
-}
-
-.footer-content p {
-    margin: 0 auto;
     padding: 5px 0px;
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width:500px) {
+    .subber {
+        width: 83%;
+        text-align: center;
+        padding: 0;
+        margin: 20px;
+    }
+
+    .intro {
+        width: auto;
+        display: flex;
+        justify-content: center;
+    }
 }
